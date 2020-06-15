@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { PrintService } from "./services/print.service";
 @NgModule({
   declarations: [
     AppComponent
@@ -10,7 +11,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PrintService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
